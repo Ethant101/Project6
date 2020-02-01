@@ -1,0 +1,11 @@
+doctype html
+
+html
+    head
+        title USER MANAGER
+    body
+        h1 User Deleted
+        form(action='/deleteUser', method='POST')
+            input(type='submit', value='confirm')
+            input(type='text', name='id', id='id', value= id, style="display:none;")
+        a(href='/') retutrn to home

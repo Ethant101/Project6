@@ -1,0 +1,14 @@
+doctype html
+
+html
+    head
+        title USER MANAGER
+    body
+        h1 Edit User
+        form(action='/editUser', method='POST')
+            input(type='text', name='name', id='name', value= name)
+            input(type='email', name='email', id='email', value= email)
+            input(type='number', name='age', id='age', value= age)
+            input(type='text', name='id', id='id', value= id, style="display:none;")
+            input(type='submit')
+        a(href='/') retutrn to home

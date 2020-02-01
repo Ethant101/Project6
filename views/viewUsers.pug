@@ -1,0 +1,29 @@
+html
+head
+    title ViewUsers
+    style(
+        tr, th, td {
+            border: 1px solid black;
+        }   
+    )
+head
+body
+    table(style="border:2px solid black")
+        tr
+            th Firstname
+            th email
+            th Age
+            th edit
+            th delete
+        each user in userObj
+            tr
+                td(style="border: 1px solid black;") #{user.name}
+                td(style="border: 1px solid black;") #{user.email}
+                td(style="border: 1px solid black;") #{user.age}
+                td
+                    a(href='edit/' + user.id) edit
+                td
+                    a(href='delete/' + user.id) delete
+    a(href='/') return to home
+
+        
